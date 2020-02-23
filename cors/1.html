@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+
+<body>
+  <button onclick="submit">提交</button>
+</body>
+<script>
+
+  function submit() {
+    $.get('http://localhost:3000/cors', (data) => {
+      console.log(data)
+      // 发起一个服务器请求，服务器与服务器之间不存在跨域
+    })
+  }
+</script>
+
+</html>

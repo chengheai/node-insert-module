@@ -1,0 +1,25 @@
+{
+  "name": "node-insert-module",
+  "version": "1.0.0",
+  "description": "14d",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chengheai/node-insert-module.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "request": "^2.88.2"
+  },
+  "bugs": {
+    "url": "https://github.com/chengheai/node-insert-module/issues"
+  },
+  "homepage": "https://github.com/chengheai/node-insert-module#readme"
+}
