@@ -6,7 +6,14 @@ router.post('/reg', (req, res) => {
   let { us, ps } = req.body;
   // console.log(us);
   if (us && ps) {
-    User.insertMany({ us, ps })
+    User.find({ us })
+      .then(data => {
+        if (data.length === 0) {
+          return User.insertMany({ us, ps });
+        } else {
+          res.send({ err: -3, msg: '用户已存在' });
+        }
+      })
       .then(() => {
         // 此处不能用res ？？？
         res.send({ err: 0, msg: '注册ok' });
